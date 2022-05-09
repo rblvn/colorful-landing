@@ -306,6 +306,25 @@ h2._title {
   }
 }
 
+.main__section-button {
+  min-width: 346px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 1023px) {
+  .main__section-button {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.main__section-button .main__button {
+  width: 100%;
+}
+.main__section-button .main__button .btn {
+  width: 100%;
+}
+
 .main__section-img {
   width: 100%;
 }
@@ -392,6 +411,9 @@ h2._title {
   }
 }
 
+.main__help .main__section-button {
+  margin: 0 auto;
+}
 @media (max-width: 1023px) {
   .main__help .main__section-button .main__button {
     width: 100%;
@@ -709,7 +731,7 @@ h2._title {
 }
 
 .main__rate-pluses {
-  margin: 50px 0 52px 0;
+  margin: 50px 0 72px 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -753,6 +775,21 @@ h2._title {
   .main__rate-plus img {
     margin: 0 17px 0 0;
   }
+}
+
+.main__rate-button {
+  width: 352px;
+}
+@media (max-width: 1023px) {
+  .main__rate-button {
+    width: 100%;
+  }
+}
+.main__rate-button .main__button {
+  width: 100%;
+}
+.main__rate-button .main__button .btn {
+  width: 100%;
 }
 
 .main__form {
@@ -849,7 +886,17 @@ h2._title {
 }
 
 .main__form-button {
+  min-width: 216px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 40px 0 0 0;
+}
+.main__form-button .main__button {
+  width: 100%;
+}
+.main__form-button .main__button .btn {
+  width: 100%;
 }
 @media (max-width: 1023px) {
   .main__form-button .main__button {
@@ -1265,9 +1312,6 @@ h2._title {
 .main__create-radio .main__create-input:not(:last-child) {
   margin: 5px 18px 5px 0;
 }
-.main__create-radio .main__create-input:first-child {
-  margin: 5px 18px 5px 10px;
-}
 
 .main__create-result {
   max-width: 315px;
@@ -1331,7 +1375,7 @@ h2._title {
 
 .main__create-cost, .main__create-name {
   text-align: center;
-  color: #7A18D5;
+  color: #262626;
 }
 
 .main__create-release {
@@ -1616,4 +1660,18 @@ h2._title {
 
 .main__slider-named {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .main__slider-graph {
+    max-height: 600px;
+  }
+}
+
+.lockImage {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }

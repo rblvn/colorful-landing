@@ -15,7 +15,7 @@
             <a href="#customImagePopup" id="closeImagePopup" class="popup__image-bg"></a>
             <div class="popup__image-content">
                 <div class="popup__image-border">
-                    <div class="popup__image-img"><img src="img/dbx-add-img.svg" alt=""></div>
+                    <div class="popup__image-img"><img class="lockImage" src="img/dbx-add-img.svg" alt=""></div>
                     <h2 class="popup__image-title _title _desk">Перетащите сюда изображение</h2>
                     <h2 class="popup__image-title _title _mobile">Добавить изображение</h2>
                     <div class="popup__image-text">или нажмите на кнопку</div>
@@ -165,7 +165,7 @@
                              <div class="main__create-result">
                                  <div class="main__create-info">
                                      <div class="main__create-img">
-                                         <img id="resultImage" src="img/dbx-custom-token.png" alt="custom">
+                                         <img id="resultImage" class="lockImage" src="img/dbx-custom-token.png" alt="custom">
                                      </div>
                                      <div class="main__create-name">
                                          
@@ -187,15 +187,18 @@
                         <div class="main__slider-line">
                             <div class="main__slider-item">
                                 <div class="main__slider-named">Dogelon Mars</div>
-                                <div class="main__slider-img"><img class="_desk-img" src="img/dbx-dogelon-mars.png" alt="Dogelon Mars"><img class="_mobile-img" src="img/dbx-dogelon-mars-mobile.png" alt="Dogelon Mars"></div>
+                                <canvas class="main__slider-graph" id="dogelonMars"></canvas>
+                               
                             </div>
                             <div class="main__slider-item">
                                 <div class="main__slider-named">Shiba token</div>
-                                <div class="main__slider-img"><img class="_desk-img" src="img/dbx-shiba.png" alt="Shiba"><img class="_mobile-img" src="img/dbx-shiba-mobile.png" alt="Shiba"></div>
+                                <canvas class="main__slider-graph" id="shiba"></canvas>
+                                
                             </div>
                             <div class="main__slider-item">
                                 <div class="main__slider-named">Dogecoin</div>
-                                <div class="main__slider-img"><img class="_desk-img" src="img/dbx-dogecoin.png" alt="Dogecoin"><img class="_mobile-img" src="img/dbx-dogecoin-mobile.png" alt="Dogecoin"></div>
+                                <canvas class="main__slider-graph" id="dogecoin"></canvas>
+                        
                             </div>
                         </div>
                         <div class="main__slider-buttons">
@@ -370,6 +373,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>
